@@ -1,0 +1,27 @@
+/* ===================== DARK THEME ===================== */
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#171512; --paper-2:#1c1a16; --sheet:#211e1a; --card:#1f1c18; --card-2:#262320;
+  --line:#35302a; --line-soft:#2d2924; --line-strong:#4a433b; --edge:#b9b0a3;
+  --ink:#f1e8dc; --ink-2:#d9cfc2; --muted:#a39a8e; --muted-2:#857d72;
+  --green:#3f5a2e; --green-2:#557a3c; --green-3:#7fc278; --green-tile:#232c1d;
+  --violet:#352d4a; --orange:#4a3020; --amber:#4a3a14; --pink:#4a2622; --blue:#1f3247; --mint:#22301f;
+  --rust:#e8834d; --drop:#000;
+  --card-shadow:inset 0 1px 0 #ffffff0a, 0 1px 0 #0000004d, 0 12px 24px -16px #000;
+}
+html[data-theme="dark"] .search label{background:var(--sheet);border-color:var(--line-strong);box-shadow:inset 0 1px 0 #ffffff08}
+html[data-theme="dark"] .chip{background:#24211dcc}
+html[data-theme="dark"] .callout{border-color:#3d4d30}
+html[data-theme="dark"] .tabpill,html[data-theme="dark"] .btn.next{box-shadow:inset 0 1px 0 #ffffff1f,var(--pop)}
+html[data-theme="dark"] .tk-k{color:#f0a37f} html[data-theme="dark"] .tk-s{color:#a9d39a}
+html[data-theme="dark"] .tk-c{color:#7d756b} html[data-theme="dark"] .tk-t{color:#8fb7f0} html[data-theme="dark"] .tk-n{color:#ec9fb2}
+html[data-theme="dark"] .logo mark{background:linear-gradient(transparent 55%,#557a3c 55%,#557a3c 92%,transparent 92%)}
+html[data-theme="dark"] .scrim.on{background:#0009}
+html[data-theme="dark"] .sp.done .c{border-color:#557a3c}
+html[data-theme="dark"] .pill.done{border-color:#557a3c}
+html[data-theme="dark"] .les.done .fi{border-color:#7fc278}
+html[data-theme="dark"] .uses.yes li::marker{color:#7fc278} html[data-theme="dark"] .uses.no li::marker{color:#ef6a60}
+/* chuyển màu mượt khi đổi theme */
+body,.top,.side,.card,.stage,.stepper,.codecard,.chip,.btn,.sbtn,.badge,.search label,.pill,.tier,.seg{transition:background-color .35s ease,border-color .35s ease,color .35s ease}
+.themebtn{width:34px;height:34px;border:1.2px solid var(--line-strong);border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--card);overflow:hidden}
+.themebtn:hover{border-color:var(--ink)}

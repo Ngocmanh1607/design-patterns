@@ -1,0 +1,40 @@
+/* ---- React/Motion additions ---- */
+.tab,.seg button,.les,.csbar button{position:relative}
+.tab.on{background:none;border-color:transparent;box-shadow:none}
+.tab>*:not(.tabpill),.les>*:not(.lespill){position:relative}
+.tabpill{position:absolute;inset:-1.2px;border-radius:8px;background:var(--green);border:1.2px solid var(--ink);box-shadow:inset 0 1px 0 #ffffff8c,var(--pop)}
+.seg button.on{background:none;box-shadow:none}
+.segpill{position:absolute;inset:0;border-radius:7px;background:var(--sheet);box-shadow:0 1px 0 #503c2320,inset 0 0 0 1px var(--line-strong)}
+.les.on{background:none;border-color:transparent;box-shadow:none}
+.lespill{position:absolute;inset:-1.2px;border-radius:7px;background:var(--green);border:1.2px solid var(--ink);box-shadow:var(--pop)}
+.csbar button.on{background:none;border-color:transparent;box-shadow:none}
+.cspill{position:absolute;inset:-1px;border-radius:7px;background:var(--green);border:1px solid var(--ink);box-shadow:1px 1.5px 0 var(--drop)}
+.shell.nosb{grid-template-columns:minmax(0,1fr)}
+.mod-items{display:block}
+.march{animation:march 1.2s linear infinite}
+@keyframes march{to{stroke-dashoffset:-22}}
+.steps::before{display:none}
+.track{position:absolute;left:30px;right:30px;top:13px;height:2px;background:var(--line-strong);border-radius:2px}
+.track .fill{height:100%;background:var(--green-3);border-radius:2px}
+.sp .c{position:relative;overflow:visible}
+.sp.on .c{background:var(--sheet);box-shadow:none;border-color:var(--edge)}
+.cdot{position:absolute;inset:-1.3px;border-radius:50%;background:var(--green-2);border:1.3px solid var(--ink);box-shadow:var(--pop)}
+.codecard .code-h{width:100%;cursor:pointer;text-align:left;border-bottom:0}
+.codecard pre{border-top:1px solid var(--line)}
+.copyb{margin-left:8px;font-size:11px;border:1px solid var(--line-strong);border-radius:6px;padding:2px 8px;background:var(--card);font-weight:500;letter-spacing:0}
+.codecard .tg{margin-left:auto}
+.codecard .tg::after{content:none!important}
+.btn.next .nl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;min-width:0}
+.extra{display:flex;flex-direction:column;gap:12px}
+.lgrid{grid-template-columns:minmax(0,1fr) 370px;max-width:1500px}
+.lgrid.focus{grid-template-columns:minmax(0,1fr) 340px;max-width:none}
+svg.diagram{height:auto}
+.stepcard{will-change:transform}
+@media (max-width:1240px){ .lgrid,.lgrid.focus{grid-template-columns:minmax(0,1fr)} .extra{display:grid;grid-template-columns:1fr 1fr} }
+@media (max-width:900px){
+  .side{transform:none;transition:none;position:fixed}
+  .shell,.shell.nosb{grid-template-columns:minmax(0,1fr)}
+  .extra{grid-template-columns:minmax(0,1fr)}
+  svg.diagram{height:auto!important}
+}
+@media (max-width:1240px){ .right{display:block!important} }
